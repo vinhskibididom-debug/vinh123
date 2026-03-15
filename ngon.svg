@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="120">
+
+<style>
+.bg{fill:white}
+
+.box{
+font-family:monospace;
+font-size:30px;
+white-space:nowrap;
+overflow:hidden;
+width:0;
+
+background:linear-gradient(
+90deg,
+red,
+orange,
+yellow,
+lime,
+cyan,
+blue,
+violet,
+red
+);
+
+background-size:400% 100%;
+
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+
+animation:rainbow 6s linear infinite;
+}
+
+.line1{
+animation:
+typing1 8s steps(28,end) infinite,
+rainbow 6s linear infinite;
+}
+
+.line2{
+animation:
+typing2 8s steps(38,end) infinite,
+rainbow 6s linear infinite;
+}
+
+@keyframes rainbow{
+0%{background-position:0%}
+100%{background-position:100%}
+}
+
+@keyframes typing1{
+0%{width:0}
+40%{width:650px}
+50%{width:0}
+100%{width:0}
+}
+
+@keyframes typing2{
+0%{width:0}
+50%{width:0}
+90%{width:780px}
+100%{width:0}
+}
+</style>
+
+<rect class="bg" width="100%" height="100%"/>
+
+<foreignObject x="20" y="40" width="780" height="40">
+<div xmlns="http://www.w3.org/1999/xhtml" class="box line1">
+Hi, My name is Đặng Thiên Vĩnh
+</div>
+</foreignObject>
+
+<foreignObject x="20" y="40" width="780" height="40">
+<div xmlns="http://www.w3.org/1999/xhtml" class="box line2">
+My school is Bạch Liêu secondary school
+</div>
+</foreignObject>
+
+</svg>
